@@ -1,0 +1,227 @@
+@import url('globals_style.css');
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--light-grayish);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+}
+
+.article-image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-body {
+    padding: 29px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.article-body-title {
+    font-size: 16px;
+    color: var(--very-dark-grayish);
+    line-height: 25px;
+}
+
+.article-body-text {
+    margin-top: 10px;
+    line-height: 20px;
+    color: var(--desaturated-dark);
+}
+
+.article-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 29px;
+    justify-self: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.article-footer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.article-footer-user {
+    margin-left: 10px;
+}
+
+.article-footer-user-name {
+    font-weight: 700;
+    color: var(--very-dark-grayish);
+}
+
+.article-footer-user-date {
+    color: var(--grayish);
+    margin-top: 5px;
+}
+
+.article-footer-container-icon-icon {
+    padding: 10px;
+    border-radius: 100%;
+    background: var(--light-grayish);
+    position: absolute;
+    right: 29px;
+}
+
+.article-footer-container-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--very-dark-grayish);
+    left: 0;
+    bottom: -100%;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+
+.article-footer-share {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 29px;
+}
+
+.article-footer-share-text {
+    color: var(--grayish);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.article-footer-share-icons-icon {
+    margin-left: 20px;
+}
+
+.article-footer-share-icon {
+    padding: 10px;
+    border-radius: 100%;
+    background: var(--desaturated-dark);
+    position: absolute;
+    right: 29px;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .article {
+        width: 450px;
+    }
+
+    .article-footer-share {
+        justify-content: space-between;
+    }
+
+    .article-footer-share-icons {
+        margin: auto;
+    }
+
+    .article-footer-share-icons-icon {
+        margin-right: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .article {
+        width: 800px;
+        height: 300px;
+        flex-direction: row;
+        position: relative;
+        overflow: visible;
+    }
+
+    .article-body {
+        width: 50%;
+        height: 100%;
+        padding: 50px 10px;
+        margin: auto;
+        position: relative;
+    }
+
+    .article-body-title {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .article-image {
+        width: 40%;
+        height: 100%;
+    }
+
+    .article-body-text {
+        margin-top: 20px;
+    }
+
+    .article-footer-container-icon {
+        width: 300px;
+        border-radius: 10px;
+        height: 60px;
+        position: absolute;
+        bottom: 80px;
+        left: 200px;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .article-footer-container-icon::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        transform: rotate(45deg);
+        background: var(--very-dark-grayish);
+        left: calc(50% - 5px);
+        bottom: -5px;
+    }
+
+    .article-footer-share-icons-icon {
+        margin-right: 5px;
+    }
+
+    .article-footer-share-icon {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .article-image {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+    }
+
+    .article-footer-container-icon-icon {
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .article-footer-container-icon-icon:hover {
+        background: var(--very-dark-grayish);
+        color: #fff;
+    }
+ 
+}

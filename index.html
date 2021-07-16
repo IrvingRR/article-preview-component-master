@@ -3,34 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+  <title>Irving Rodríguez | Article preview component</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="container">
+    <article class="article">
+      <div class="article-image">
+        <img src="images/drawers.jpg" alt="Drawers" class="article-image-img">
+      </div>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+      <!-- Article Body -->
+      <div class="article-body">
+        <h2 class="article-body-title">
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h2>
+        <p class="article-body-text">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+        </p>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+        <!-- Article Footer -->
+        <div class="article-footer">
+          <img src="images/avatar-michelle.jpg" alt="Michelle" class="article-footer-image">
+          <div class="article-footer-user">
+            <p class="article-footer-user-name">
+              Michelle Appleton
+            </p>
+            <p class="article-footer-user-date">
+              28 Jun 2020
+            </p>
+          </div>
+          <i class="fas fa-share article-footer-container-icon-icon"></i>
 
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
+          <div class="article-footer-container-icon">
+            <div class="article-footer-share">
+                <p class="article-footer-share-text">share</p>
+                <div class="article-footer-share-icons">
+                  <img src="images/icon-facebook.svg" alt="" class="article-footer-share-icons-icon">
+                  <img src="images/icon-twitter.svg" alt="" class="article-footer-share-icons-icon">
+                  <img src="images/icon-pinterest.svg" alt="" class="article-footer-share-icons-icon">
+                </div>
+                <i class="fas fa-share article-footer-share-icon"></i>
+              </div>
+          </div>
+        </div>
+        <!-- End Article Footer -->
+      </div>
+    </article>
+  </main>
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
