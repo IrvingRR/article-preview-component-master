@@ -20,13 +20,3 @@ body {
     color: var(--very-dark-grayish);
     overflow-x: hidden;
 }
-
-/* JavaScript Styles */
-.show-mobile {
-    bottom: 0;
-}
-
-.show-desktop {
-    transform: scale(1);
-    opacity: 1;
-}
